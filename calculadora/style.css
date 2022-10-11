@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 9, 9);
+    padding: 100px 0;
+}
+
+
+@font-face{
+    font-family: 'WAHAHA';
+    src: url('fonts/Halloween\ Nightmare\ Demo\ \(daFONT\).ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+ 
+.calculator {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #7130A8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #F5D20C;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #6CDBE9;
+    color: #EB4BF5;
+    font: normal 4rem 'WAHAHA';
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.calculator-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.calculator button{
+    background-color: rgb(245, 210, 12);
+    color: #0351A8;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'WAHAHA' ;
+    font-size: 3.5rem;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px #EB4BF5;
+}
+
+button:hover{
+    background-color: #6CDBE9;
+    color: #EB4BF5;
+}
